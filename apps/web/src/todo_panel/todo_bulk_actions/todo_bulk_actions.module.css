@@ -1,0 +1,17 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+  padding: var(--space);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.count {
+  margin-right: auto;
+}
+
+.danger {
+  color: var(--danger);
+}

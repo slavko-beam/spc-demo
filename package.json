@@ -1,0 +1,20 @@
+{
+  "name": "spc-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"pnpm --filter @spc/api dev\" \"pnpm --filter @spc/web dev\"",
+    "generate": "pnpm --filter @spc/api spec && pnpm --filter @spc/api-client generate",
+    "test": "pnpm -r test",
+    "check": "pnpm -r check",
+    "storybook": "pnpm --filter @spc/web storybook",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "oxfmt": "^0.75.0",
+    "typescript": "^6.0.3"
+  },
+  "packageManager": "pnpm@12.6.0"
+}

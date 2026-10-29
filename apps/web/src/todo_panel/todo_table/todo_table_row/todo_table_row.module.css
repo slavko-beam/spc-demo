@@ -1,0 +1,4 @@
+.title[data-completed='true'] {
+  color: var(--muted);
+  text-decoration: line-through;
+}

@@ -1,0 +1,29 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.table th,
+.table td {
+  padding: var(--space);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.table th {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.check {
+  width: 36px;
+}
+
+.message {
+  color: var(--muted);
+  text-align: center;
+}

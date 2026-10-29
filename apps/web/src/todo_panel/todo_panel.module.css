@@ -1,0 +1,20 @@
+.panel {
+  display: grid;
+  gap: calc(var(--space) * 1.5);
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space);
+  padding: var(--space);
+  border: 1px solid var(--danger);
+  border-radius: 6px;
+  color: var(--danger);
+}

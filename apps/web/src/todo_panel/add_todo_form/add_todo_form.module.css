@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  gap: var(--space);
+}
+
+.input {
+  flex: 1;
+}
+
+.error {
+  color: var(--danger);
+  align-self: center;
+}

@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+  padding: var(--space) calc(var(--space) * 2);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.tagline {
+  color: var(--muted);
+}
+
+.current {
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.mobile .current {
+  margin-left: 0;
+  flex: 1;
+  text-align: center;
+  color: var(--text);
+  font-weight: 600;
+}

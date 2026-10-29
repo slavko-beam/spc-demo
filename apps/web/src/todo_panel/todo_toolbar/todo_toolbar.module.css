@@ -1,0 +1,16 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space);
+}
+
+.search {
+  flex: 1;
+  min-width: 160px;
+}
+
+.filters {
+  display: flex;
+  gap: 4px;
+}

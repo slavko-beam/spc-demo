@@ -1,0 +1,6 @@
+node_modules
+dist
+storybook-static
+*.db
+*.db-*
+.DS_Store

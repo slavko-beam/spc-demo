@@ -1,0 +1,19 @@
+.title {
+  margin: 0 0 var(--space);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.message {
+  color: var(--muted);
+}
