@@ -80,6 +80,7 @@ Applies to presenters, services, repositories and helpers. Keep indentation flat
 - The body starts loading data immediately (e.g. `listsPresenter.load()`, `reaction(...)`) and is never disposed. A flow only re-initialises when its `create*` runs again.
 - Build each slot element once in the body (`const settingsPopover = <SettingsPopover />`) and pass that same element to every consumer.
 - Call `create*` only from `main.tsx` or another `create*` body, never during render.
+- `create*` factories never get tests. They are wiring; the stores, presenters and views they wire up are tested on their own.
 
 ## Routing
 
@@ -89,7 +90,7 @@ Applies to presenters, services, repositories and helpers. Keep indentation flat
 
 ## Tests
 
-- Store tests cover computeds. Presenter tests use real stores with mocked services and presenters. View tests render the view with plain props.
+- Store tests cover computeds. Presenter tests use real stores with mocked services and presenters. View tests render the view with plain props. `create*` factories have no tests.
 - Use `it`, never `test`. Store and presenter tests nest one `describe` per method or computed inside the class's `describe`, and each case reads as `should … when …`:
 
   ```ts
